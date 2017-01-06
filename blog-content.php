@@ -6,11 +6,9 @@ This page is displayed in the front-page.php
        <h2 class="text-center"> Blog </h2>
        <div class="row">
 
-
            <!-- blog 1 -->
            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                <section class="homepage--blog__section">
-
                    <!-- Loop start -->
                    <?php
                        // using variable for wp_query
@@ -38,15 +36,12 @@ This page is displayed in the front-page.php
                    <!--  resetting wp_query -->
                    <?php wp_reset_postdata(); ?>
                    <!-- Loop ends -->
-
                </section>
            </div>
-
 
            <!-- blog 2 -->
            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                <section class="homepage--blog__section">
-
                    <!-- Loop start -->
                    <?php
                        // using variable for wp_query
@@ -74,14 +69,12 @@ This page is displayed in the front-page.php
                    <!--  resetting wp_query -->
                    <?php wp_reset_postdata(); ?>
                    <!-- Loop ends -->
-
                </section>
            </div>
 
            <!-- blog 3 -->
            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                <section class="homepage--blog__section">
-
                    <!-- Loop start -->
                    <?php
                        // using variable for wp_query
@@ -104,14 +97,13 @@ This page is displayed in the front-page.php
                        </div>
                        <p><?php the_excerpt(); ?></p>
 
-
                    <?php endwhile; ?>
                    <?php endif; ?>
                    <!--  resetting wp_query -->
                    <?php wp_reset_postdata(); ?>
                    <!-- Loop ends -->
-
                </section>
+               
            </div>
        </div> <!-- closing row -->
 
