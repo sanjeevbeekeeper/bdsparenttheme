@@ -71,8 +71,3 @@
         </button>
     </section>
 <?php } ?>
-
-
-
-
-<!-- talk to us -->
