@@ -87,7 +87,7 @@
 =================================================== */
 	function BeekeeperDesignStudio_excerpt($more) {
 	    global $post;
-	    	return '<div><a class="btn btn-default" href=" '. get_permalink($post->ID) . '"> Read more </a></div>';
+	    	return '<div><a class="btn-readme btn btn-default" href=" '. get_permalink($post->ID) . '"> Read more </a></div>';
 		}
 	add_filter('excerpt_more', 'BeekeeperDesignStudio_excerpt');
 
