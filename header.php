@@ -47,7 +47,7 @@
                         <div class="header-navmenu">
                             <?php
                                 wp_nav_menu( array(
-                                    'menu'              => 'primary',
+                                    'menu'              => 'primary-menu',
                                     'theme_location'    => 'primary',
                                     'depth'             => 2,
                                     'container'         => 'div',
