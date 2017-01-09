@@ -17,6 +17,8 @@
     </div>
 <?php } ?>
 
+
+
 <!-- CMS -->
 <?php if( is_page(35)) { ?>
     <!-- Quotes -->
@@ -36,13 +38,17 @@
     </div>
 <?php } ?>
 
+
+
 <!-- Website Maintenance -->
 <?php if(is_page(37)) { ?>
     <!-- text -->
 <?php } ?>
 
+
+
 <!-- Blog -->
-<?php if( is_home() ) { ?>
+<?php if( is_page(10) ) { ?>
     <!-- Quotes -->
     <div class="container">
         <div class="row">
