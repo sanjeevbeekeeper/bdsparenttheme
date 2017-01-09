@@ -32,6 +32,5 @@
     ?>
 </article> <!-- closing footer banner -->
 
-
 <!-- footer -->
 <?php get_footer(); ?>
