@@ -45,16 +45,5 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
-<!-- BANNER -->
-<article class="accent-one nogutter">
-    <?php
-        // quotes banner
-        get_template_part('banner');
-        // talk to us
-        get_template_part('banner-talktous');
-    ?>
-</article> <!-- closing footer banner -->
-
-
 <!-- footer -->
 <?php get_footer(); ?>
