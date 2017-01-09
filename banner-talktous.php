@@ -1,13 +1,14 @@
-<!-- home -->
-<?php if(is_page(6)) { ?>
-    <!-- <a href="<?php echo get_page_link(14); ?>"> Talk to Us</a> -->
+<!-- Home + Search -->
+<?php if(is_page(6)|| is_search()) { ?>
     <section class="banner-container primary-color text-center">
         <h3 class="banner-text">
-            We can provide a Complete Website solution? ss
+            We can provide a Complete Website solution?
         </h3>
         <a class="btn btn-secondary btn-lg" href="<?php echo get_page_link(14); ?>">Talk to Us</a>
     </section>
 <?php } ?>
+
+
 
 <!-- Responsive Webdesign -->
 <?php if(is_page(33)) { ?>
@@ -19,6 +20,8 @@
     </section>
 <?php } ?>
 
+
+
 <!-- CMS -->
 <?php if( is_page(35)) { ?>
     <section class="banner-container primary-color text-center">
@@ -28,6 +31,8 @@
         <a class="btn btn-secondary btn-lg" href="<?php echo get_page_link(14); ?>">Talk to Us</a>
     </section>
 <?php } ?>
+
+
 
 <!-- Website Maintenance -->
 <?php if(is_page(37)) { ?>
@@ -39,8 +44,10 @@
     </section>
 <?php } ?>
 
+
+
 <!-- Blog -->
-<?php if( is_home() ) { ?>
+<?php if( is_page(10) || is_single() ) { ?>
     <section class="banner-container primary-color text-center">
         <h3 class="banner-text">
             We can Setup a Creative Blog with User-Friendly CMS.
@@ -48,6 +55,8 @@
         <a class="btn btn-secondary btn-lg" href="<?php echo get_page_link(14); ?>">Talk to Us</a>
     </section>
 <?php } ?>
+
+
 
 <!-- About -->
 <?php if( is_page(12) ) { ?>
