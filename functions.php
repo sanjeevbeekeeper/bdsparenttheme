@@ -2,7 +2,6 @@
 	// Boostrap Styles and Scripts. 22 dec 2016
 	function bootstrap_style_script() {
 
-		// Order no: 1/3
 		// bootstrap js
 		wp_enqueue_script(
 			'bootstrap-script',	get_template_directory_uri() . '/lib/vendor/bootstrap/js/bootstrap.min.js', array('jquery'), '3.3.4', true);
