@@ -34,7 +34,7 @@
                         <!-- Contact Form 7 -->
                         <!-- note: WP-MAIL-SMTP plugin is required along with Contact Form 7 -->
                         <form class="form-horizontal" action="" method="post">
-                            <?php echo do_shortcode( '[contact-form-7 id="128" title="Talk to Us"]' ); ?>
+                            <?php echo do_shortcode( '[contact-form-7 id="270" title="Contact form 1"]' ); ?>
                         </form>
 
                     </div>
