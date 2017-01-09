@@ -1,13 +1,11 @@
 <?php get_header(); ?>
 <!-- calling the header -->
 
-
     <!-- ribbon -->
     <div class="row ribbon-container accent-one">
         <!-- searchform.php -->
         <?php get_search_form( ); ?>
     </div>
-
 
     <div class="container">
         <div class="row">
@@ -43,17 +41,11 @@
                 <?php endif; ?>
             </div> <!-- // container -->
         </div> <!-- // row -->
-    </div> <!-- // container -->
 
-    <!-- BANNER -->
-    <article class="accent-one nogutter">
-        <?php
-            // quotes banner
-            get_template_part('banner-quotes');
-            // talk to us
-            get_template_part('banner-talktous');
-        ?>
-    </article> <!-- closing footer banner -->
+        <!-- post-pagination.php -->
+        <?php get_template_part('post-pagination'); ?>
+
+    </div> <!-- // container -->
 
 <!-- footer -->
 <?php get_footer(); ?>
