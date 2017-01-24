@@ -13,7 +13,11 @@
 		// fontawesome
 		wp_enqueue_style(
 			'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
-			}
+
+		//slideshow for font-page js (24 jan 2017)
+		wp_enqueue_script(
+			'slideshow-script',	get_template_directory_uri() . '/lib/script/slideshow.js', array('jquery'), '1.0.0', true);
+		}
 
 	add_action( 'wp_enqueue_scripts', 'bootstrap_style_script' );
 
