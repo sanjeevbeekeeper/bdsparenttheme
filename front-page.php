@@ -14,12 +14,15 @@
 
        <div class="row">
            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-               <div class="homepage--image">
-                   <img src="<?php bloginfo('template_directory'); ?>/resources/img/display-image.png" alt="">
+               <div class="homepage--image" id="slideshow">
+                   <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/01.png" alt="">
+                   <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/02.png" alt="">
+                   <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/03.png" alt="">
+                   <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/04.png" alt="">
+                   <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/05.png" alt="">
                </div> <!-- // homepage-image -->
            </div> <!--// col -->
        </div> <!-- // row -->
-
 
        <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 homepage--services text-center">
