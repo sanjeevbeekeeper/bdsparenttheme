@@ -10,16 +10,18 @@
         <!-- services -->
         <div class="row">
             <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-                <article class="content--heading text-center">
+                <article class="contact_container text-center">
                     <!--  title -->
-                    <h2> Chennai office </h2>
+                    <h2> Main Office </h2>
 
                     <!--  contact content -->
-                     <address class="bds_address"><?php the_content(); ?></address>
+                     <address class="bds_address">
+                         <?php the_content(); ?>
+                     </address>
 
                      <!--  phone and email -->
                      <p>
-                         <a href="#" data-toggle="modal" data-target="#phoneno"> +91 4351421</a> <br>
+                         <a href="#" data-toggle="modal" data-target="#phoneno"> +91 044 4351 421</a> <br>
                          <a href="mailto:info@beekeeperstudio.com"> info@beekeeperstudio.com </a>
                      </p>
                 </article>
