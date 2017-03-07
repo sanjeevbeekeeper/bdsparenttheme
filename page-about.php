@@ -10,7 +10,7 @@
         <!-- services -->
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                <article class="content--heading text-center">
+                <article class="about_container text-center">
                     <!--  about content -->
                     <?php the_content(); ?>
                 </article>
@@ -22,10 +22,8 @@
 <?php endwhile; ?>
 <?php endif; ?>
 
-<br>
-<br>
 <!-- BANNER -->
-<article class="accent-one nogutter">
+<article class="nogutter">
     <?php
         // talk to us
         get_template_part('banner-talktous');
