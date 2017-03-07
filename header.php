@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 
@@ -18,14 +18,24 @@
     ?>
 
 <body <?php body_class($bgcolor); ?>>
-    <!-- container fluid starts -->
-    <div class="container-fluid">
-        <header class="text-center nogutter primary-color">
-            <div class="container">
 
+    <!-- container fluid starts -->
+    <div class="container-fluid nogutter">
+        <header class="text-center">
+
+            <!-- Cover Image -->
+            <?php if(is_page(6)) { ?>
+                <div class="bg_cover bg_cover_home"></div>
+            <?php }
+            else { ?>
+                <div class="bg_cover bg_cover_others"></div>
+                <?php
+                } ?>
+
+            <div class="container">
                 <!-- Navbar -->
-                <nav class="navbar navbar-default header-navmenu">
-                    <div class="container-fluid nogutter">
+                <nav class="navbar navbar-default header-navmenu ">
+                    <div class="container-fluid nogutter-left">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,7 +54,7 @@
                         </div>
 
                         <!-- Bootstrap navwalker classes -->
-                        <div class="header-navmenu">
+                        <div class="header-navmenu nogutter">
                             <?php
                                 wp_nav_menu( array(
                                     'menu'              => 'primary-menu',
@@ -65,14 +75,13 @@
                 <!-- Banner -->
                 <section class="banner">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
                             <!-- Home page -->
                             <?php if(is_page(6)) { ?>
-                                <h1> <?php bloginfo('description'); ?> </h1>
-                                <p>
-                                    We create a Design Standard that Builds Awareness, improves credibility, sales and leads; enhances customer experience and reduce costs.
-                                </p>
+                                <h1>
+                                    We Create Visually Stunning User Friendly Responsive Websites
+                                </h1>
                             <?php } ?>
 
                             <!-- Services -->
@@ -114,5 +123,6 @@
                     </div>
                 </section>
 
-            </div> <!-- // container -->
         </header> <!-- // header -->
+
+    <div class="container-fluid container-fluid_body nogutter">
