@@ -20,34 +20,32 @@
         ?>
 
         <div class="container">
-
             <!-- services -->
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                    <article class="content--heading text-center">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <article class="article_content text-center">
                         <!-- rwd title -->
                         <h2> <?php the_title(); ?> </h2>
                         <!-- rwd content -->
-                        <?php the_content(); ?>
+                        <p><?php the_content(); ?></p>
                     </article>
                 </div> <!--// col -->
             </div> <!-- // row -->
 
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-                    <div class="homepage--image">
+                    <div class="image__services">
                         <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/resources/img/services.png" alt="">
                     </div> <!-- // homepage-image -->
                 </div> <!--// col -->
             </div> <!-- // row -->
-
         </div> <!-- // container -->
 
     <?php endwhile; ?>
 <?php endif; ?>
 
 <!-- BANNER -->
-<article class="accent-one nogutter">
+<article class="nogutter">
     <?php
         // quotes banner
         get_template_part('banner');
