@@ -1,0 +1,44 @@
+// _base.scss
+// 31 dec 2016
+
+html {
+    position: relative;
+    min-height: 100%;
+    }
+
+body {
+    @include fontweight(regular);
+    @include lineheight;
+    font-size: fontsize(20);
+    color: lighten($accent-two, 15%);	// dark grey
+    background-color: $primary-color;
+    margin-bottom: 300px; /* bottom = footer height */
+    }
+
+.container-fluid_body {
+    background-color: #fff;
+    }
+
+// list reset
+.listreset {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    }
+
+// helper
+.nogutter {
+    margin-left: -15px;
+    margin-right: -15px;
+    &-left {
+        padding-left: -15px;
+        }
+    &-right {
+        padding-right: -15px;
+        }
+    }
+
+mark {
+    font-family: monospace;
+    color: rgb(82, 111, 42);
+    }

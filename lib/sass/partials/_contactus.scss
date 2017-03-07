@@ -1,0 +1,29 @@
+
+.contact_container {
+    margin-top: 80px;
+    address {
+        margin-bottom: 10px;
+        }
+    }
+
+// Modal window
+.modal {
+    position: fixed;
+    top: 20% !important;
+    .modal-dialog {
+        .modal-body {
+            @include fontweight(semibold);
+            font-size: fontsize(60);
+            @media (max-width: $sm) {
+                font-size: fontsize(40);
+                }
+            }
+        }
+    }
+
+// Google map
+.bds_map {
+    border: 1px solid gainsboro;
+    line-height: 0; // this removes the gap below the map
+    @extend %mediaspacing;
+    }

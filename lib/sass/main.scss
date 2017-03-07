@@ -1,0 +1,40 @@
+// Primary scss goes here
+// Helper
+@import 'modules/fonts';
+@import 'modules/maps';
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/media';
+@import 'modules/functions';
+@import 'modules/placeholders';
+@import 'modules/lists';
+
+// components
+@import 'partials/paragraph';
+@import 'partials/frontpage';
+@import 'partials/coverimage';
+@import 'partials/buttons';
+@import 'partials/typography';
+@import 'partials/banner';
+@import 'partials/contactus';
+@import 'partials/ribbon';
+@import 'partials/shame';
+@import 'partials/header';
+@import 'partials/services';
+// @import 'partials/tabs';
+@import 'partials/dropdown';
+@import 'partials/formelements';
+@import 'partials/radio';
+@import 'partials/list';
+// @import 'partials/code';
+@import 'partials/alerts';
+@import 'partials/navbar';
+@import 'partials/footer';
+@import 'partials/blog';
+@import 'partials/404';
+@import 'partials/logo';
+@import 'partials/base';
+@import 'partials/about';
+// @import 'partials/services';
+// @import 'partials/slideshow';
+@import 'partials/pre';

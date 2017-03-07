@@ -1,0 +1,46 @@
+// _footer.scss
+// 21 dec 2016
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #fff;
+    border-top: 1px solid darken($accent-one, 10%); 
+    .footer-nav {
+        margin: 20px 0;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+                a {
+                    padding: 8px;
+                    display: block;
+                }
+                @media (min-width: $sm) {
+                    display: inline-block;
+                    }
+                }
+            }
+        }
+    .social-icons {
+        a {
+            display: inline-block;
+            padding: 10px;
+            }
+        }
+    .copyright-info {
+        font-size: fontsize(19);
+        margin-top: 20px;
+        }
+    small {
+        color: hsl(0, 0%, 70%);
+        }
+    .footerlogo-home {
+        width: 50px;
+        margin-bottom: 10px;
+        }
+    } // footer

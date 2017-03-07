@@ -1,0 +1,64 @@
+// Beekeeper Design Studio
+// _frontpage.scss
+// 06 mar 2016
+
+// Slideshow
+#slideshow {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    position: relative;
+    display: block;
+    margin-top: -150px;
+    & img {
+        margin-right: auto;
+        margin-left: auto;
+        }
+    & > .slide:first-child {
+        position: relative;
+        }
+    & > .slide {
+        margin: 0 auto;
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        }
+    }
+
+.contentcolor {
+    background-color: #fff;
+    margin-top: -20px;
+    }
+
+// Services
+.homepage--services {
+    &__intro {
+        margin: 15px 0;
+        margin-bottom: 40px;
+        p {
+            font-size: fontsize(19);
+            @include lineheight;
+            @include fontweight(regular);
+            }
+        }
+    &__lists {
+        margin: 15px 0px 85px 0px;
+        &-section {
+            @include lineheight;
+            font-size: fontsize(18);
+            margin-bottom: 40px;
+            & h3 a {
+                font-size: fontsize(14);
+                }
+            }
+        h3 {
+            text-transform: uppercase;
+            font-size: fontsize(24);
+            margin-bottom: 10px;
+            ul li {
+                list-style: none;
+                }
+            }
+        }
+    }

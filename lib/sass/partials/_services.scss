@@ -1,0 +1,24 @@
+// Headings
+h1, h2, h3 {
+	@include lineheight(1.2);
+	}
+
+article {
+	&.article_content {
+		margin-bottom: 50px;
+		h3 {
+			margin-top: 30px;
+			font-size: fontsize(25);
+		}
+	& p {
+		font-size: fontsize(17);
+		@include lineheight;
+		}
+	}
+}
+
+.image {
+	&__services {
+		margin-bottom: 50px;
+		}
+	}

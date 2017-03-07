@@ -1,0 +1,18 @@
+// _shame.scss
+// 14 dec 2016, wednesday
+
+// Debug
+.red {border: 1px solid red;}
+.redbg {background-color: pink;}
+.blue {border: 1px solid blue;}
+.green {border: 1px solid green;}
+.yellow {border: 1px solid yellow;}
+
+// Image container
+.img-container {
+    @extend %mediaspacing;
+    img {
+        border-radius: $borderradius;
+        width: 100%;
+        }
+    }

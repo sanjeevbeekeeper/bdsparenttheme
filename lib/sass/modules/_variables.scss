@@ -1,0 +1,27 @@
+// _variables.scss
+// 09th dec 2016
+
+// Font Family
+$fontfamily: 'Source Sans Pro', sans-serif;
+
+////////// ----- COLOR THEME ----- //////////
+// 60-30-10 rule
+// blue
+$primary-colorname: 'primary-color'; // only for stylesheet references
+$primary-color: #05b5f6; // dominent color
+// yellow
+$secondary-colorname: 'secondary-color'; // only for stylesheet references
+$secondary-color: #fffd9d; // subdominent color
+// gray
+$accent-colorname-one: 'accent-one'; // only for stylesheet references
+$accent-one: lighten(gainsboro, 10%); // accent color 1
+// light gray
+$accent-colorname-two: 'accent-two'; // only for stylesheet references
+$accent-two: #3a3a3a; // accent color 2
+// link color
+$link-colorname: 'link-color'; // only for stylesheet references
+$link-color: #3b85d4;    // link color
+////////// ----- COLOR THEME CLOSING ----- //////////
+
+// BORDER RADIUS
+$borderradius: 3px;

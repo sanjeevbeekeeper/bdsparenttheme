@@ -1,0 +1,13 @@
+// _about.scss
+// 31 dec 2016
+
+.about {
+    &_container {
+        margin: 80px 0 80px 0;
+    }
+    &_intro_one {
+        @include lineheight;
+        font-size: fontsize(18);
+        margin-bottom: 60px;
+        }
+    }

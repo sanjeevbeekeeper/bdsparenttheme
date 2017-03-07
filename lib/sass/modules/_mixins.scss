@@ -1,0 +1,30 @@
+// _mixins
+// 09 dec 2016
+
+// FONT
+@mixin fontweight($ff) {
+    @if $ff == 'light' {
+        font-weight: 300;
+        }
+    @elseif $ff == 'regular' {
+        font-weight: 400;
+        }
+    @elseif $ff == 'semibold' {
+        font-weight: 600;
+        }
+	@elseif $ff == 'bold' {
+        font-weight: 700;
+        }
+	}
+
+// lineheight
+@mixin lineheight($val:1.5){
+	line-height: #{$val}em ;
+	}
+
+// tab-size for 'pre' element
+@mixin tab-size {
+	-moz-tab-size: 	4; 	/* Firefox 4+ */
+	-o-tab-size: 	4; 	/* Opera 11.5 & 12.1 only */
+	tab-size: 		4; 	/* Chrome 21+, Safari 6.1+, Opera 15+ */
+	}

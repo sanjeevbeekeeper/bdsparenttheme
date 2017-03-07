@@ -1,0 +1,69 @@
+// _banners.scss
+// 14 dec 2016, wednesday
+
+.banner-container {
+    $fragments: darkgray;
+    padding: 30px;
+    // animation
+    @extend %duration;
+    &.banner {
+        border-top: 1px solid darken($accent-one, 10%);
+        .banner-text {
+            font-size: fontsize(19);
+            @include lineheight;
+            margin-bottom: 6px;
+            }
+        }
+    &.banner-talktous {
+        background-color: $accent-one;
+        .banner-text {
+            font-size: fontsize(22);
+            @include lineheight;
+            margin-bottom: 24px;
+            // animation
+            @extend %duration;
+            }
+        .btn {
+            margin-bottom: 10px;
+            // animation
+            @extend %duration;
+            }
+        &:hover {
+            color: #fff;
+            border-top: 1px solid transparent;
+            background-color: $primary-color;
+            z-index: 100;
+            .banner-text {
+                transform: translateY(10px);
+                }
+            .btn {
+                transform: translateY(-10px);
+                }
+            }
+        }
+    .banner-quote {
+        font-size: fontsize(21);
+        margin-bottom: 20px;
+        &:before {
+            color: $fragments;
+            content: open-quote;
+            }
+        &:after {
+            color: $fragments;
+            content: close-quote;
+            }
+        }
+    .banner-source {
+        color: $fragments;
+        font-style: italic;
+        font-size: fontsize(18);
+        &:before {
+            color: $fragments;
+            content: '-- ';
+            }
+        &:after {
+            color: $fragments;
+            content: ' --';
+            }
+        }
+    }
