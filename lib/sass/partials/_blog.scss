@@ -76,6 +76,7 @@ article {
         &-right {
             @extend %blog-nav-padding-both;
             a {
+                @extend %duration;
                 @extend %blog-nav-bothsides;
                 @extend %blog-nav-hover;
                 }
@@ -83,6 +84,7 @@ article {
         &-left {
             @extend %blog-nav-padding-both;
             a {
+                @extend %duration;
                 @extend %blog-nav-bothsides;
                 @extend %blog-nav-hover;
                 }
