@@ -1,8 +1,23 @@
 // _placeholders.scss
 // 21 dec 2016
 
+// _header.scss 20170309
+%bannerheading {
+    h1 {
+        color: #fff;
+        font-family: 'Lora', serif;
+        font-size: fontsize(39);
+        }
+    }
+
+// css animation duration 20170307
 %duration {
     transition-duration: .2s;
+    }
+
+// _footer.scss 20170307
+%footershadow {
+    box-shadow: 0px 2px 3px lighten(gray, 30%);
     }
 
 // top banner
