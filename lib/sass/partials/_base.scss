@@ -9,14 +9,17 @@ html {
 body {
     @include fontweight(regular);
     @include lineheight;
-    font-size: fontsize(20);
+    font-size: fontsize(21);
     color: lighten($accent-two, 15%);	// dark grey
     background-color: $primary-color;
-    margin-bottom: 300px; /* bottom = footer height */
+
     }
 
 .container-fluid_body {
+    // padding-bottom: 200px;
     background-color: #fff;
+    z-index: 10;
+    @extend %footershadow;
     }
 
 // list reset
