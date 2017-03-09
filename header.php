@@ -23,15 +23,6 @@
     <div class="container-fluid nogutter">
         <header class="text-center">
 
-            <!-- Cover Image -->
-            <?php if(is_page(6)) { ?>
-                <div class="bg_cover bg_cover_home"></div>
-            <?php }
-            else { ?>
-                <div class="bg_cover bg_cover_others"></div>
-                <?php
-                } ?>
-
             <div class="container">
                 <!-- Navbar -->
                 <nav class="navbar navbar-default header-navmenu ">
@@ -73,7 +64,14 @@
                 </nav>
 
                 <!-- Banner -->
-                <section class="banner">
+                <?php
+                if (is_page(6)) { ?>
+                    <section class="banner_home">
+                <?php } else { ?>
+                    <section class="banner">
+                <?php }
+
+                 ?>
                     <div class="row">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
