@@ -2,12 +2,13 @@
 // blue background
 
 header {
+    background-color: $primary-color;
     .banner {
         padding-bottom: 100px;
-        h1 {
-            color: #fff;
-            font-family: 'Lora', serif;
-            font-size: fontsize(39);
+        @extend %bannerheading;
+        &_home {
+            padding-bottom: 200px;
+            @extend %bannerheading;
             }
-        }
-    }
+        } // .banner
+    } // header
