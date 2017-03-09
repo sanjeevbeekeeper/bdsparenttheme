@@ -1,15 +1,11 @@
 // _footer.scss
 // 21 dec 2016
 
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 10;
-    height: 300px;
-    width: 100%;
+%footercontainer{
+    padding-bottom: 20px;
     padding-top: 50px;
-    background-color: #fff;
-    border-top: 1px solid darken($accent-one, 10%); 
+    bottom: 0;
+    width: 100%;
     .footer-nav {
         margin: 20px 0;
         ul {
@@ -17,6 +13,7 @@ footer {
             padding-left: 0;
             li {
                 a {
+                    color: $accent-two;
                     padding: 8px;
                     display: block;
                 }
@@ -30,6 +27,10 @@ footer {
         a {
             display: inline-block;
             padding: 10px;
+            &:hover {
+                border-radius: $borderradius;
+                background-color: $accent-two;
+                }
             }
         }
     .copyright-info {
@@ -40,7 +41,65 @@ footer {
         color: hsl(0, 0%, 70%);
         }
     .footerlogo-home {
-        width: 50px;
         margin-bottom: 10px;
         }
+    }
+
+footer {
+    bottom: 0;
+    height: 260px;
+    z-index: -1;
+    width: 100%;
+    border-top: 1px solid darken($accent-one, 10%);
+    // using if and else to have two classes 'footer_container' and 'footer_navmenu_talktous' see the footer.php
+    .footer_container {
+        @extend %footercontainer;
+        background-color: #fff;
+        &_talktous {
+            @extend %footercontainer;
+            background-color: $primary-color;
+            }
+        }
     } // footer
+
+// Menu selection for footer navmenu
+.footer-navmenu {
+	$border-size: 1px;
+	$border-style: solid;
+	$border-color: $accent-two;
+	.current_page_parent a, .current_page_item a, .current-menu-item a,	.current-page-ancestor a {
+		border-bottom: $border-size $border-style $border-color;
+		}
+	.current_page_item a {
+		background-color: transparent;
+		}
+	.footer-nav a {
+		text-transform: uppercase;
+		font-size: fontsize(16);
+		display: inline-block;
+		color: $primary-color;
+		&:hover  {
+			background-color: #fff;
+			}
+		}
+	} // footer-navmenu
+.footer-navmenu-talk-to-us {
+	$border-size: 1px;
+	$border-style: solid;
+	$border-color: $secondary-color;
+	.current_page_parent a, .current_page_item a, .current-menu-item a,	.current-page-ancestor a {
+		border-bottom: $border-size $border-style $border-color;
+		}
+	.footer-nav a {
+		display: inline-block;
+		color: $primary-color;
+		&:hover, &:visited, &:link, &:focus  {
+			color: red;
+			background-color: transparent;
+			}
+		}
+	}
+
+.footer-navmenu-talk-to-us a {
+    color: white !important;
+    }
