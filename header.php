@@ -25,43 +25,44 @@
 
             <div class="container">
                 <!-- Navbar -->
-                <nav class="navbar navbar-default header-navmenu ">
-                    <div class="container-fluid nogutter-left">
+                <nav class="navbar navbar-default header-navmenu">
+                    <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
 
-                            <a class="navbar-brand hidden-sm" href="<?php bloginfo('url'); ?>">
-                                <img class="headerlogo-home" src="<?php bloginfo('template_directory'); ?>/resources/logo/headerlogo-home.png" alt="">
-                            </a>
-                            <a class="navbar-brand visible-sm" href="<?php bloginfo('url'); ?>">
-                                <img class="headerlogo-home-xs" src="<?php bloginfo('template_directory'); ?>/resources/logo/headerlogo-home-xs.png" alt="">
-                            </a>
-                        </div>
+                                    <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                                        <img class="headerlogo-home" src="<?php bloginfo('template_directory'); ?>/resources/logo/headerlogo-home.png" alt="">
+                                    </a>
+                                </div>
 
-                        <!-- Bootstrap navwalker classes -->
-                        <div class="header-navmenu nogutter">
-                            <?php
-                                wp_nav_menu( array(
-                                    'menu'              => 'primary-menu',
-                                    'theme_location'    => 'primary',
-                                    'depth'             => 2,
-                                    'container'         => 'div',
-                                    'container_class'   => 'collapse navbar-collapse',
-                                    'container_id'      => 'bs-example-navbar-collapse-1',
-                                    'menu_class'        => 'nav navbar-nav navbar-right',
-                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                    'walker'            => new wp_bootstrap_navwalker())
-                                    );
-                                    ?>
-                        </div>
+                                <!-- Bootstrap navwalker classes -->
+                                <div class="header-navmenu">
+                                    <?php
+                                        wp_nav_menu( array(
+                                            'menu'              => 'primary-menu',
+                                            'theme_location'    => 'primary',
+                                            'depth'             => 2,
+                                            'container'         => 'div',
+                                            'container_class'   => 'collapse navbar-collapse',
+                                            'container_id'      => 'bs-example-navbar-collapse-1',
+                                            'menu_class'        => 'nav navbar-nav navbar-right',
+                                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                            'walker'            => new wp_bootstrap_navwalker())
+                                            );
+                                        ?>
+                                </div> <!-- // .header-navmenu -->
+                            </div> <!-- // .col -->
+                        </div> <!-- // .row -->
                     </div><!-- // container-fluid -->
-                </nav>
+                </nav> <!-- // .navbar -->
 
                 <!-- Banner -->
                 <?php
@@ -73,7 +74,7 @@
 
                  ?>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 
                             <!-- Home page -->
                             <?php if(is_page(6)) { ?>
@@ -120,7 +121,6 @@
                         </div>
                     </div>
                 </section>
-
         </header> <!-- // header -->
 
     <div class="container-fluid container-fluid_body nogutter">
