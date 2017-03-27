@@ -1,0 +1,39 @@
+// _listandmaps.scss
+// Author Beekeeper Design Studio
+// 20 March 2016
+
+// _pre.scss
+$ext: html css php scss js txt;
+
+// _pre.scss
+// font awesome icons
+$faicon: (
+    hdd: '\f0a0',
+    folder-open: '\f07c',
+    folder-close: '\f07b',
+    file: '\f0f6'
+    );
+
+// ----- The list below is works for both _pre_old.scss and _pre.scss ----- //
+// CAREFUL BEFORE EDITING THEM //
+
+// Custom Sytaxhighlight for pre tag
+$syntax:
+	hsl(0, 0%, 70%)		// c1	// gray lighter
+	hsl(150, 92%, 36%) 	// c2	// yellow
+	hsl(14, 73%, 52%) 	// c3 	// dark orange
+	hsl(238, 74%, 54%)	// c4	// green
+	hsl(190, 74%, 48%)	// c5	// blue
+	hsl(316, 89%, 65%)	// c6	// pink
+	hsl(42, 82%, 48%)	// c7	// yellow orange
+	;
+
+$cmd:
+	hsl(0, 0%, 50%)		// z1	// gray lighter
+	hsl(150, 92%, 36%) 	// z2	// green
+	hsl(14, 91%, 64%) 	// z3 	// orange
+	hsl(256, 100%, 76%)	// z4	// purple
+	hsl(190, 74%, 48%)	// z5	// blue
+	hsl(316, 100%, 74%)	// z6	// pink
+	hsl(42, 90%, 56%)	// z7	// yellow orange
+	;
