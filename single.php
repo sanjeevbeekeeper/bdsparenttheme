@@ -10,11 +10,14 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="separator_large"></div>
 
             <!-- Back btn -->
-            <div class="blog-single-backbtn">
+            <div class="blog_single_back">
                 <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Back</a>
             </div>
+
+            <div class="sectionspace_30"></div>
 
             <!-- LOOP -->
             <?php if (have_posts()) :
