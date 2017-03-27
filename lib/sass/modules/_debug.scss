@@ -1,0 +1,10 @@
+// _debug.scss
+// updated on 27 mar 2017
+
+$foo: red blue green yellow purple;
+
+@each $color in $foo {
+    .debug_#{$color} {
+        border: 1px solid $color;
+        }
+    }
