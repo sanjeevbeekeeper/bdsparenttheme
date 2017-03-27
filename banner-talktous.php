@@ -1,11 +1,15 @@
 <!-- Home + Search -->
 <?php if(is_page(6)|| is_search()) { ?>
     <section class="banner-container banner-talktous text-center">
-        <h3 class="banner-text">
-            We can Provide a Complete Web Solution
-        </h3>
-        <a class="btn btn-success" href="<?php echo get_page_link(14); ?>">Talk to Us</a>
-    </section>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+            <h3 class="banner-text">
+                We can Provide a Complete Web Solution
+            </h3>
+            <a class="btn btn-success" href="<?php echo get_page_link(14); ?>">Talk to Us</a>
+        </div>
+    </div>
+</section>
 <?php } ?>
 
 <!-- Responsive Webdesign -->
