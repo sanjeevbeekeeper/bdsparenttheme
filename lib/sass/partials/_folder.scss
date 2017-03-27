@@ -1,0 +1,28 @@
+// _pre.scss
+// Author Beekeeper Design Studio
+// 20 Mar 2016
+
+.folder_container {
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 99%) !important;
+    font-size: fontsize(13);
+    ul {
+        list-style: none;
+        padding-left: 20px;
+        // font awesome icons
+        @each $key, $value in $faicon {
+            .#{$key}:before {
+                content: '#{$value}';
+                @extend %fontawesome;
+                }
+            }
+        // extension after the text
+        @each $holder in $ext {
+            .#{$holder}:after {
+                content: '.#{$holder}';
+                color: darkgray;
+                margin-left: 3px;
+                }
+            } // @each $holder in $ext
+        } // ul
+    }
