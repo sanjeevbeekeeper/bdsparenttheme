@@ -4,10 +4,14 @@
 .about {
     &_container {
         margin: 80px 0 80px 0;
-    }
+        }
     &_intro_one {
         @include lineheight;
-        font-size: fontsize(18);
+        font-size: fontsize(18); // 20170315
         margin-bottom: 20px;
+        }
+     // 20170315    
+    &_intro_two {
+        font-size: fontsize(17);
         }
     }
