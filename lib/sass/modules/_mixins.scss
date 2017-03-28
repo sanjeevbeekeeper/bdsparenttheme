@@ -1,19 +1,15 @@
 // _mixins
 // 09 dec 2016
 
-// FONT
+// Font family
+
+// Fontweight for 'Source Sans Pro'
 @mixin fontweight($ff) {
-    @if $ff == 'light' {
-        font-weight: 300;
-        }
-    @elseif $ff == 'regular' {
+    @if $ff == 'regular' {
         font-weight: 400;
         }
     @elseif $ff == 'semibold' {
         font-weight: 600;
-        }
-	@elseif $ff == 'bold' {
-        font-weight: 700;
         }
 	}
 
