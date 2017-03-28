@@ -12,17 +12,23 @@
             list-style: none;
             padding-left: 0;
             li {
+                display: inline-block;
                 a {
                     color: $accent-two;
                     padding: 8px;
                     display: block;
-                }
-                @media (min-width: $sm) {
-                    display: inline-block;
                     }
-                }
+                @media (max-width: $sm) {
+                    margin-top: 10px;
+                    display: block;
+                    width: 100px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    }
+
+                } // li
             }
-        }
+        } // .footer-nav
     .social-icons {
         a {
             display: inline-block;
@@ -33,6 +39,7 @@
                 }
             }
         }
+        
     .copyright-info {
         font-size: fontsize(19);
         margin-top: 20px;
