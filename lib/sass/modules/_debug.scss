@@ -1,7 +1,7 @@
 // _debug.scss
 // updated on 27 mar 2017
 
-$foo: red blue green yellow purple;
+$foo: "red" "blue" "green" "yellow" "purple"; // 20170328 - added quotes around the names
 
 @each $color in $foo {
     .debug_#{$color} {
