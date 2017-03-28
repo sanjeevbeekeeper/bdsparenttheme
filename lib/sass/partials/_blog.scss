@@ -1,60 +1,86 @@
 // _blog.scss
 // 26 dec 2016, Monday
 
+// blog index
 article {
     .blog--article {
         &__title-date {
              h3 {
+                margin-top: 0;
+                font-size: fontsize(16); // 20170328 - reduced the font size
                 padding: 6px 8px;
                 margin-bottom: 0;
-                font-size: fontsize(18);
-                // animation
-                @extend %duration;
+                border-left: 0px solid transparent;
+                @extend %duration_fast; // animation
                 .truncate {
                     display: inline-block;
-                    width: 620px;
+                    width: 86%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     }
                 time {
+                    font-size: fontsize(14);
                     float: right;
-                    color: hsl(0,0%,70%);
+                    color: lighten($accent-two, 50%);
                     display: inline-block;
-                    font-style: italic;
                     }
+                // h3 hover
                 &:hover {
+                    border-left: 4px solid $primary-color;
                     border-radius: $borderradius;
-                    background-color: $accent-one;
-                    }
-                }
-            }
-        }
+                    background-color: $secondary-color; // 20170328 - changed the color
+                    time {
+                        color: $accent-two;
+                        }
+                    } // &:hover
+                } // h3
+            } // &__title-date
+        } // .blog--article
+    } // article
+
+/* =============================================
+    SINGLE BLOG
+    20 Mar 2017
+================================================ */
+
+// back button
+.blog_single_back {
+    font-size: fontsize(21);
     }
 
-
-
-// Blog content
+// Blog single
 .blog--article {
-    border-radius: $borderradius;
+    code {
+        font-family: $fontfamily;
+        }
+    font-size: fontsize(19);
+    .blog_para {
+        @include lineheight;
+        } // .blog_para
     img {
-        border: 1px solid #d3d3d3;
+        border: 1px solid silver;
         margin-bottom: 10px;
         width: 100%;
+        height: 100%;
+        border-radius: $borderradius;
+        box-shadow: 0px 2px 4px gainsboro;
         display: block;
-        }
+        } // img
     h3 {
-        font-size: fontsize(20);
-        margin-top: 0;
-        }
+        // title
+        &.blog_single {
+            @include fontweight(semibold);
+            margin-bottom: 20px;
+            }
+        } // h3
     &__date {
         margin-top: -3px;
         & time {
             margin-left:0px;
             margin-right: 6px;
             color: hsl(0,0%,70%);
-            font-size: fontsize(16);
-            font-style: italic;
+            font-size: fontsize(14);
             display: inline-block;
             }
         & a {
@@ -64,14 +90,14 @@ article {
         &_index {
             color: blue;
             }
-        }
-    }
-
+        } // &__date
+    } // .blog--article
 
 .blog--bottom__navigation {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 80px;
+    font-size: fontsize(18); // 20170328 - reduced the font size
     .blog-nav {
         &-right {
             @extend %blog-nav-padding-both;
@@ -93,17 +119,6 @@ article {
     }
 
 /* =============================================
-    SINGLE BLOG
-    Dec 2016
-================================================ */
-
-// back button
-.blog-single-backbtn {
-    padding-left: 30px;
-    }
-
-
-/* =============================================
     FEATURED IMAGE
     Jan 2017
 ================================================ */
@@ -116,14 +131,3 @@ article {
     height: auto;
     border-radius: $borderradius;
     }
-
-/*
-Rejected on 27th dec 2016.
-- When you hover on any post the background displays a square box.
-The hover has to be only in the blog index page and not on the single page.
-The current code display on both pages and this can be fixed later.
-*/
-    // .blog--hover:hover {
-    //     background-color: hsl(0,0%,97%);
-    //     box-shadow: 1px 1px 2px gainsboro;
-    // }
