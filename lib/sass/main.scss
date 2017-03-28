@@ -7,7 +7,8 @@
 @import 'modules/media';
 @import 'modules/functions';
 @import 'modules/placeholders';
-@import 'modules/lists';
+@import 'modules/debug';
+@import 'modules/listandmaps';
 
 // components
 @import 'partials/paragraph';
@@ -21,20 +22,18 @@
 @import 'partials/shame';
 @import 'partials/header';
 @import 'partials/services';
-// @import 'partials/tabs';
 @import 'partials/dropdown';
 @import 'partials/talktous';
 @import 'partials/radio';
 @import 'partials/list';
-// @import 'partials/code';
 @import 'partials/alerts';
 @import 'partials/navbar';
 @import 'partials/footer';
 @import 'partials/blog';
 @import 'partials/404';
-@import 'partials/logo';
+// @import 'partials/logo'; // 20170328
 @import 'partials/base';
 @import 'partials/about';
-// @import 'partials/services';
-// @import 'partials/slideshow';
-@import 'partials/pre';
+@import 'partials/pre'; // new pre code
+@import 'partials/folder'; // new folder codes
+@import 'partials/pre_old'; // used on older posts
