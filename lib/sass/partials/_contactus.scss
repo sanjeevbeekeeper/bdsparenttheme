@@ -1,3 +1,5 @@
+// _buttons.scss
+// 13 dec 2016, tuesday
 
 .contact_container {
     margin-top: 80px;
@@ -12,6 +14,7 @@
     top: 20% !important;
     .modal-dialog {
         .modal-body {
+            padding: 20px;
             @include fontweight(semibold);
             font-size: fontsize(60);
             @media (max-width: $sm) {
@@ -19,6 +22,10 @@
                 }
             }
         }
+    }
+
+.contact_container {
+    font-size: fontsize(18);
     }
 
 // Google map
