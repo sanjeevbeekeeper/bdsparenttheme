@@ -82,6 +82,26 @@
        </div> <!--// col -->
     </div> <!--// row -->
 
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-mg-10 col-mg-offset-1 col-sm-12 col-xs-12">
+            <div class="language_container">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/html5.png" alt="HTML 5">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/css3.png" alt="CSS 3">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/javascript.png" alt="JavaScript">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/jquery.png" alt="jQuery">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/ajax.png" alt="Ajax">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/php.png" alt="PHP">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/sass.png" alt="Sass">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/bootstrap.png" alt="Bootstrap">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/sketch.png" alt="Sketch">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/wordpress.png" alt="WordPress">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/grunt.png" alt="Grunt">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/github.png" alt="Github">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/atom.png" alt="Atom">
+                <img src="<?php bloginfo('template_directory'); ?>/resources/languages/git.png" alt="Git">
+            </div> <!-- // .language_container -->
+        </div> <!-- // .col -->
+    </div> <!-- // .row -->
     </div>
 
     <!-- BANNER -->
