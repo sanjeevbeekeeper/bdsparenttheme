@@ -15,4 +15,5 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/blog.php';
 require get_template_directory() . '/inc/navbar.php';
 require get_template_directory() . '/inc/imagecompression.php';
+require get_template_directory() . '/inc/remove_emoji.php';
 require get_template_directory() . '/inc/cleanup.php';
