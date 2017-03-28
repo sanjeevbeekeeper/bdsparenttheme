@@ -1,18 +1,36 @@
 // _placeholders.scss
 // 21 dec 2016
 
+// _pre.scss 20170320
+%fontawesome {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-family: $fa;
+    margin-right: 5px;
+    }
+
 // _header.scss 20170309
 %bannerheading {
     h1 {
         color: #fff;
         font-family: 'Lora', serif;
-        font-size: fontsize(39);
+        font-size: fontsize(34); // 20170319
         }
     }
 
 // css animation duration 20170307
 %duration {
     transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    }
+
+// css animation duration - fast 20170320
+%duration_fast {
+    transition-duration: .1s;
+    -webkit-transition-duration: .1s;
+    -moz-transition-duration: .1s;
     }
 
 // _footer.scss 20170307
