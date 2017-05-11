@@ -12,6 +12,9 @@
                 <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/03.png" alt="">
                 <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/04.png" alt="">
                 <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/05.png" alt="">
+                <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/06.png" alt="">
+                <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/07.png" alt="">
+                <img class="slide" src="<?php bloginfo('template_directory'); ?>/resources/slideshow/08.png" alt="">
             </div> <!-- // homepage-image -->
         </div> <!--// col -->
     </div> <!-- // row -->
